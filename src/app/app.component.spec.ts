@@ -2,11 +2,7 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
-import { FormsModule } from '@angular/forms';
-=======
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
->>>>>>> initial commit
 import { Todo } from './todo';
 
 describe('AppComponent', () => {
