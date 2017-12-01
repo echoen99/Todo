@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Todo} from './todo';
 import {TodoDataService} from './todo-data.service';
 
@@ -8,19 +8,16 @@ import {TodoDataService} from './todo-data.service';
   styleUrls: ['./app.component.css'],
   providers: []
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    this.onAddTodo(new Todo({id: 1, title: 'test'}));
+  }
 
   // No longer needed, now handled by TodoListHeaderComponent
   // newTodo: Todo = new Todo();
 
   constructor(private todoDataService: TodoDataService) {
   }
-
-  // No longer needed, now handled by TodoListHeaderComponent
-  // addTodo() {
-  //   this.todoDataService.addTodo(this.newTodo);
-  //   this.newTodo = new Todo();
-  // }
 
   // Add new method to handle event emitted by TodoListHeaderComponent
   onAddTodo(todo: Todo) {
