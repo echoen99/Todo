@@ -7,37 +7,37 @@
     },
     {
       "title": "Clean inbox",
-      "complete": true,
+      "complete": false,
       "id": 2
     },
     {
       "title": "Make restaurant reservation",
-      "complete": true,
+      "complete": false,
       "id": 3
     },
     {
       "title": "Test 1",
-      "complete": true,
+      "complete": false,
       "id": 4
     },
     {
       "title": "Test 33",
-      "complete": true,
+      "complete": false,
       "id": 6
     },
     {
       "title": "לקנות חלב",
-      "complete": true,
+      "complete": false,
       "id": 8
     },
     {
       "title": "ללכת לישון",
-      "complete": true,
+      "complete": false,
       "id": 10
     },
     {
       "title": "new task",
-      "complete": true,
+      "complete": false,
       "id": 11
     }
   ]
