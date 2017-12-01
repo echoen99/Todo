@@ -14,4 +14,9 @@ export class TodoListFooterComponent {
   constructor() {
   }
 
+  @Input() get countOfCompletedItems(): number {
+    const completed = this.todos.filter((t) => t.complete === true).length;
+    return completed;
+  }
+
 }

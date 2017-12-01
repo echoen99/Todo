@@ -11,11 +11,18 @@ export class TodoListComponent {
   @Input()
   todos: Todo[];
 
+  @Input() get sortedTodos(): Todo[] {
+    return this.todos.sort((t, t1) => (t.complete ? 0 : 1));
+  }
+
   @Output()
   remove: EventEmitter<Todo> = new EventEmitter();
 
   @Output()
   toggleComplete: EventEmitter<Todo> = new EventEmitter();
+
+  @Output()
+  edit: EventEmitter<Todo> = new EventEmitter();
 
   constructor() {
   }
@@ -28,4 +35,7 @@ export class TodoListComponent {
     this.remove.emit(todo);
   }
 
+  onEditTodo(todo: Todo) {
+    this.edit.emit(todo);
+  }
 }

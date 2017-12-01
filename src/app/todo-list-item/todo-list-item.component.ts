@@ -1,5 +1,5 @@
+import { Todo } from './../todo';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Todo } from '../todo';
 
 @Component({
   selector: 'app-todo-list-item',
@@ -16,6 +16,9 @@ export class TodoListItemComponent {
   @Output()
   toggleComplete: EventEmitter<Todo> = new EventEmitter();
 
+  @Output()
+  edit: EventEmitter<Todo> = new EventEmitter();
+
   constructor() {
   }
 
@@ -25,6 +28,10 @@ export class TodoListItemComponent {
 
   removeTodo(todo: Todo) {
     this.remove.emit(todo);
+  }
+
+  editTodo(todo: Todo) {
+    this.edit.emit(todo);
   }
 
 }
