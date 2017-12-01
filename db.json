@@ -2,43 +2,43 @@
   "todos": [
     {
       "title": "Read SitePoint article",
-      "complete": false,
+      "complete": true,
       "id": 1
     },
     {
       "title": "Clean inbox",
-      "complete": false,
+      "complete": true,
       "id": 2
     },
     {
       "title": "Make restaurant reservation",
-      "complete": false,
+      "complete": true,
       "id": 3
     },
     {
       "title": "Test 1",
-      "complete": false,
+      "complete": true,
       "id": 4
     },
     {
-      "title": "Test 2",
-      "complete": false,
-      "id": 5
-    },
-    {
       "title": "Test 33",
-      "complete": false,
+      "complete": true,
       "id": 6
     },
     {
       "title": "לקנות חלב",
-      "complete": false,
+      "complete": true,
       "id": 8
     },
     {
       "title": "ללכת לישון",
-      "complete": false,
+      "complete": true,
       "id": 10
+    },
+    {
+      "title": "new task",
+      "complete": true,
+      "id": 11
     }
   ]
 }
