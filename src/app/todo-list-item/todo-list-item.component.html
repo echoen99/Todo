@@ -1,5 +1,6 @@
 <div class="view">
   <input class="toggle" type="checkbox" (click)="toggleTodoComplete(todo)" [checked]="todo.complete">
   <label (click)="editTodo(todo)">{{todo.title}}</label>
+  <app-todo-item-snooze></app-todo-item-snooze>
   <button class="destroy" (click)="removeTodo(todo)"></button>
 </div>

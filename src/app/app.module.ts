@@ -15,6 +15,8 @@ import { TodoListFooterComponent } from './todo-list-footer/todo-list-footer.com
 import { ApiService } from './api.service';
 import { TodosComponent } from './todos/todos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TodoItemSnoozeComponent } from './todo-list-item/todo-item-snooze/todo-item-snooze.component';
+import { SnoozeTimerComponent } from './todo-list-item/todo-item-snooze/snooze-timer/snooze-timer.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TodoListItemComponent,
     TodoListFooterComponent,
     TodosComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TodoItemSnoozeComponent,
+    SnoozeTimerComponent
   ],
   imports: [
     AppRoutingModule,
