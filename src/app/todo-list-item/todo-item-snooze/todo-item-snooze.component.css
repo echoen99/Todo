@@ -2,7 +2,8 @@
     background-color: black;
     color: red;
     font-size: 1.2em;
-    margin: 1em;
+    /* margin: 1em; */
+    margin: auto;
     text-align: center;
     width: 1.5em;
 }
@@ -12,3 +13,18 @@
   position: relative;
   display: flex;
 }
+
+.button {
+  margin: 0px auto;
+  width: 20%;
+  border: 1px solid red;
+}
+
+.button:hover {
+  background-color: cyan;
+  box-shadow: 1px 1px greenyellow;
+  box-shadow: 2px 2px gold;
+  /* box-shadow: 3px 3px purple; */
+  
+}
+

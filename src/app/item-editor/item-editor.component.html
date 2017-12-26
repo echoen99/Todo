@@ -1,0 +1,4 @@
+<div class="editor" *ngIf="onEdit">
+  <label for="input">Edit:</label>
+  <input type="text" class="input"  [(ngModel)]="todo.title" (keyup.enter)="closeEdit()">
+</div>

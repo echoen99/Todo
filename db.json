@@ -32,7 +32,7 @@
     },
     {
       "title": "new task",
-      "complete": false,
+      "complete": true,
       "id": 11
     }
   ]

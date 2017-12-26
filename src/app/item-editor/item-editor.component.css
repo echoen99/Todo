@@ -1,0 +1,22 @@
+.editor {
+    z-index: auto;
+    position: relative;
+    height: 50px;
+    margin: 0px auto;
+    background-color: aqua;
+    transition: all 5s ease-in-out;
+}
+
+.editor:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.input {
+    width: 50%;
+    height: 80%;
+    font-size: large;
+    margin: 2px auto;
+    background-color: purple;
+}
+

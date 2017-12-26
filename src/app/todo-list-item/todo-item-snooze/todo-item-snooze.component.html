@@ -1,6 +1,6 @@
 <div class="snooze">
-  <button (click)="timer.start()">Start</button>
-  <button (click)="timer.stop()">Stop</button>
+  <button class="button" (click)="timer.start()">Start</button>
+  <button class="button" (click)="timer.stop()">Stop</button>
   <div class="seconds">{{timer.seconds}}</div>
   <app-snooze-timer #timer></app-snooze-timer>
 </div>
